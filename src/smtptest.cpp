@@ -34,6 +34,7 @@ int Options::process(int argc, char* argv[])
     {
         if (string(argv[i]) == "-k")        { verify_ = false; }
         else if (string(argv[i]) == "-v")   { verbose_ = true; }
+        else break;
     }
     return i;
 }
